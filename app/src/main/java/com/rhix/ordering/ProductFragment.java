@@ -39,7 +39,8 @@ public class ProductFragment extends Fragment {
 
     private void fetchProducts() {
         ApiService apiService = ApiClient.getClient().create(ApiService.class);
-        Call<ProductResponse> call = apiService.getProducts("7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e939000");
+        // update to api values that matches your api requirement
+        Call<ProductResponse> call = apiService.getProducts("7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e939");
 
         call.enqueue(new Callback<ProductResponse>() {
             @Override
@@ -81,7 +82,7 @@ public class ProductFragment extends Fragment {
             nameTextView.setText(product.getName());
             priceTextView.setText(String.format("Php%s", product.getPrice())); // Assuming price is a string
             descriptionTextView.setText(product.getDescription()); // Set the description text
-            String fullImageUrl = "https://devlab.helioho.st/store/" + product.getImageUrl(); // Adjust based on your URL structure
+            String fullImageUrl = "{your url base}" + product.getImageUrl(); // Adjust based on your URL structure
 
             Picasso.get()
                     .load(fullImageUrl)

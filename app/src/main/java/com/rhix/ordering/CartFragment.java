@@ -173,7 +173,8 @@ public class CartFragment extends Fragment {
         try {
             orderDetails.put("items", itemsArray);
             orderDetails.put("total_price", totalPrice);
-            orderDetails.put("api_key", "7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e939000");
+            // update to other values that matches your api requirement
+            orderDetails.put("api_key", "7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e9390");
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(getContext(), "Error preparing order data", Toast.LENGTH_SHORT).show();

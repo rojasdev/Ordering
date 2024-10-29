@@ -3,4 +3,8 @@
     <string name="app_list">Foods</string>
     <string name="app_cart">Cart</string>
     <string name="app_orders">Orders</string>
+    <string name="app_add">+</string>
+    <string name="app_minus">-</string>
+    <string name="app_nbr">1</string>
+    <string name="app_add_cart">Add to Cart</string>
 </resources>

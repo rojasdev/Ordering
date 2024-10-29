@@ -31,7 +31,8 @@ public class OrderFragment extends Fragment {
 
     private void fetchOrders() {
         ApiOrder apiOrder = ApiClient.getClient().create(ApiOrder.class);
-        Call<OrderListResponse> call = apiOrder.listOrders("7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e939000");
+        // update to api values that matches your api requirement
+        Call<OrderListResponse> call = apiOrder.listOrders("7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e939");
 
         call.enqueue(new Callback<OrderListResponse>() {
             @Override

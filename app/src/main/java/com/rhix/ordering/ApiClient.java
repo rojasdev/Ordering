@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-    private static final String BASE_URL = "https://devlab.helioho.st/store/"; // Replace with your API base URL
+    private static final String BASE_URL = "{your url base}"; // Replace with your API base URL
     private static Retrofit retrofit;
 
     public static Retrofit getClient() {
