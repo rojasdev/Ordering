@@ -32,7 +32,7 @@ public class OrderFragment extends Fragment {
     private void fetchOrders() {
         ApiOrder apiOrder = ApiClient.getClient().create(ApiOrder.class);
         // update to api values that matches your api requirement
-        Call<OrderListResponse> call = apiOrder.listOrders("7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e939");
+        Call<OrderListResponse> call = apiOrder.listOrders("{replace with your wown API key}");
 
         call.enqueue(new Callback<OrderListResponse>() {
             @Override
