@@ -40,7 +40,7 @@ public class ProductFragment extends Fragment {
     private void fetchProducts() {
         ApiService apiService = ApiClient.getClient().create(ApiService.class);
         // update to api values that matches your api requirement
-        Call<ProductResponse> call = apiService.getProducts("7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e939");
+        Call<ProductResponse> call = apiService.getProducts("{replace with your wown API key}");
 
         call.enqueue(new Callback<ProductResponse>() {
             @Override
