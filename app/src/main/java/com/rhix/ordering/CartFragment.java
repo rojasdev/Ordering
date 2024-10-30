@@ -174,7 +174,7 @@ public class CartFragment extends Fragment {
             orderDetails.put("items", itemsArray);
             orderDetails.put("total_price", totalPrice);
             // update to other values that matches your api requirement
-            orderDetails.put("api_key", "7999b0bd43fe96b083f8430a0de1cc65ecf3902993d15ffb6d3a287f9e9390");
+            orderDetails.put("api_key", "{replace with your wown API key}");
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(getContext(), "Error preparing order data", Toast.LENGTH_SHORT).show();
